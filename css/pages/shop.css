@@ -1,0 +1,269 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Lexend";
+  
+    /* Color Variables */
+    --colorGreenMain: #076C54;
+    --colorBlack: #1D1D1D;
+    --colorLightGreen: #D7E5BE;
+    --colorMainGray: #969696;
+    --colorLightGray: #606566;
+    --colorbackground: #FDFDFD;
+    --colorLightyellow: #D7E5BE;
+    --colorultralightGreen: #EAF6EB;
+  }
+
+  body {
+    font-family: var(--mainfont) !important;
+    cursor: default;
+    height: 100vh;
+    background-color: var(--colorbackground);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Reset Styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Text Selection Styles */
+::-moz-selection {
+    color: var(--colorBlack);
+    background: var(--colorYellow);
+}
+
+/* Page selection colos  */
+::selection {
+    color: var(--colorWhite);
+    background: var(--colorYellow);
+}
+
+
+
+
+/* caro */
+.D-SectionPAdding {
+    margin-top: 130px;
+}
+
+/* sec cards */
+
+.D-ShopItemCard {
+    background-color: var(--colorbackground);
+    box-shadow: 0px 2px 10px 0px rgba(34, 87, 122, 0.15);
+    border-radius: 14px;
+    /* height: 31.5rem; */
+    transition: .7s;
+}
+
+.D-ShopItemCard:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.D-ShopItemCard:hover .D-ShopItemImage{
+    transform: scale(1.04);
+}
+
+
+.D-SecCardSignleItem {
+    border: 1.5px solid var(--colorGreenMain);
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.D-ShopMainText {
+    color: var(--colorGreenMain);
+    font-family: var(--mainfont);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+}
+
+/* product card */
+img {
+    width: 100%;
+}
+
+.D-ShopItemTitle {
+    color: var(--colorGreenMain);
+    font-family: var(--mainfont);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+}
+
+.D-ShopItemPrice {
+    color: var(--colorGreenMain);
+    font-family: var(--mainfont);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.539px;
+}
+
+.ri-star-line {
+    color: var(--colorLightyellow);
+    font-size: 20px;
+}
+
+.D-ShopRatings {
+    margin-top: -17px;
+}
+
+.D-ShopItemImage {
+    border-radius: 12px;
+    transition: .7s;
+}
+
+.D-ShopAddToCartButton {
+    height: 100%;
+}
+
+.D-ShopAddToCartButton:hover {
+    height: 100%;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--colorbackground);
+    border-radius: 14px;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    transition: 1.5s;
+    z-index: 9999;
+    /* border: 1px solid var(--colorBlueMain); */
+}
+
+.cart.active {
+    right: 0;
+    transition: .5s;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: var(--colorBlueMain);
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: .5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: .5rem;
+}
+
+.D-ShopButtonBuyNow {
+    width: 136px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    background: var(--colorBlueMain);
+    color: var(--colorWhite);
+    border-color: transparent;
+    transition: 10ms;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.D-ShopButtonBuyNow:hover {
+    background-color: var(--colorYellow) !important;
+    border: none !important;
+}
+
+#cart-close {
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+.float {
+    position: fixed;
+    bottom: 70%;
+    right: 0px;
+    background-color: var(--colorBlueMain);
+    color: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    z-index: 999;
+    border-radius: 50% 0px 0px 50%;
+    /* transform: rotate(-90deg); */
+
+    font-size: 20px;
+    cursor: pointer;
+}

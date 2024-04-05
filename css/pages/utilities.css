@@ -1,0 +1,88 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Lexend";
+
+    /* Color Variables */
+    --colorGreenMain: #076C54;
+    --colorBlack: #1D1D1D;
+    --colorLightGreen: #D7E5BE;
+    --colorMainGray: #969696;
+    --colorLightGray: #606566;
+    --colorbackground: #FDFDFD;
+    --colorLightyellow: #D7E5BE;
+    --colorultralightGreen: #EAF6EB;
+}
+
+
+
+.space-tb-20 {
+    height: 20px !important;
+}
+
+.space-tb-30 {
+    height: 30px !important;
+}
+
+.space-tb-15 {
+    height: 15px !important;
+}
+
+.space-tb-10 {
+    height: 10px !important;
+}
+
+.space-tb-5 {
+    height: 5px !important;
+}
+
+.space-tb-60 {
+    height: 60px !important;
+}
+
+.space-tb-70 {
+    height: 70px !important;
+}
+
+.space-tb-80 {
+    height: 80px !important;
+}
+
+.space-tb-90 {
+    height: 90px !important;
+}
+
+.space-tb-100 {
+    height: 100px !important;
+}
+
+.space-tb-150 {
+    height: 150px !important;
+}
+
+.space-tb-50 {
+    height: 50px !important;
+}
+
+.D-SectionPadding {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.D-ML-20 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.D-SectionMainText {
+    color: #ffffff;
+    font-family: var(--mainfont);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
