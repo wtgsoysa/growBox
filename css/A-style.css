@@ -508,6 +508,8 @@ body::-webkit-scrollbar {
   padding-left: 30px;
   text-align: center;
   justify-content: center;
+  background-color: var(--colorultralightGreen);
+  color: var(--colorGreenMain);
 
 }
 
