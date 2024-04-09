@@ -17,7 +17,6 @@
     <link rel="icon" href="/images/fav_icon_lightGreen.png" />
 
     <!-- Link style sheets -->
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/pages/shop.css">
 
     <!-- Remix icon cdn -->
@@ -93,338 +92,379 @@
 
 
 
-
   <div class="D-SectionPAdding"></div>
 
 
-    <!-- floating button start -->
-    <p class="float py-3 px-3" id="cart-icon">
-        <span class="ri-shopping-cart-fill"></span>
-    </p>
-    <!-- floating button end -->
+  <!-- floating button start -->
+  <p class="float py-3 px-3" id="cart-icon">
+      <span class="ri-shopping-cart-fill"></span>
+  </p>
+  <!-- floating button end -->
 
-    <!-- cart start -->
-    <!-- <div class="container my-4 text-end">
-        <a href="#" id="cart-ico">
-            <button class="btn btn-primary">
-                <i class="ri-shopping-cart-line"></i>
-            </button>
-        </a>
-    </div> -->
+  <!-- <div class="container my-4 text-end">
+      <a href="#" id="cart-ico">
+          <button class="btn btn-primary">
+              <i class="ri-shopping-cart-line"></i>
+          </button>
+      </a>
+  </div> -->
 
-    <!-- CART  -->
-    <div class="cart mt-3 mx-3">
-        <h2 class="cart-title">Your Cart</h2>
+  <!-- CART  -->
+  <div class="cart mt-3 mx-3">
+      <h2 class="cart-title">Your Cart</h2>
 
-        <!-- CONTENT  -->
-        <div class="cart-content"></div>
+      <!-- CONTENT  -->
+      <div class="cart-content"></div>
 
-        <!-- TOTAL   -->
-        <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$0</div>
+      <!-- TOTAL   -->
+      <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+      </div>
+      <!-- BUY BUTTON  -->
+      <button type="button" class="btn btn-primary D-ShopButtonBuyNow btn-buy text-center">Buy Now</button>
+      <!-- CART CLOSE  -->
+      <i class="ri-close-line" id="cart-close"></i>
+  </div>
+  <!-- cart end -->
+
+  <!-- carousel start here -->
+  <div class="container">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+  <!-- carousel end here -->
+
+  <!-- Card section -->
+  <div class="container">
+      <div class="row mt-4">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-restart-line"></span> Easy
+                  Return</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-shield-line"></span> Safe
+                  Payments</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span
+                      class="ri-money-dollar-circle-line"></span> Best Price</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-checkbox-circle-line"></span>
+                  100% Authentic Products</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- main heading text -->
+  <div class="container">
+      <h1 class="text-center my-4 D-ShopMainText">
+          Shop Products
+      </h1>
+      <!-- all products are here -->
+
+      <div class="row g-3">
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Peacock Wall Decor</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Carved Wood Mask</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Silver Stone Necklace</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Gold Pearl Necklace Set</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Women's Necklace</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Leather Humpty</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Leather Chair</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">
+                      Painted Stoneware Vase</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Fish Selling Painting</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Leader Speaks Painting</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img1.jpg" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Sturdy Stilts Painting</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+          <!-- item start -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="D-ShopItemCard p-3">
+                  <img src="/images/Shop/item-img2.png" alt="Product"
+                      class="mx-auto D-ShopItemImage product-img">
+                  <h1 class="D-ShopItemTitle mt-3 product-title">Vegetable Basket</h1>
+                  <p class="D-ShopItemPrice product-price">$469.34</p>
+                  <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
+                  <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
+                      type="submit">
+                      Add to Cart
+                  </button>
+              </div>
+          </div>
+          <!-- item end -->
+
+
+      </div>
+  </div>
+
+
+  <div class="space-tb-100"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+      =======================================
+                Footer Section
+      =======================================
+  -->
+
+  <footer class="D-FooterContainer">
+    <div class="container D-SectionPadding">
+      <div class="row pt-4">
+        <div class="col-md-3 col-lg-6 order-md-last">
+          <div class="row justify-content-end">
+            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+              <h2 class="footer-heading"><a href="#" class="logo">
+                  <img src="/images/home_images/Logo-white.svg" alt="FooterLogo" style="width: 155px;">
+                </a></h2>
+              <p class="D-copyright">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                Site Developed <i class="ri-heart-3-fill" aria-hidden="true"></i> by <a
+                  href="https://github.com/dizzpy/" target="_blank" class="D-FooterLinks">
+                  <span class="D-FooterLinkText">
+                    moduleZ
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- BUY BUTTON  -->
-        <button type="button" class="btn btn-primary D-ShopButtonBuyNow btn-buy text-center">Buy Now</button>
-        <!-- CART CLOSE  -->
-        <i class="ri-close-line" id="cart-close"></i>
-    </div>
-    <!-- cart end -->
 
-    <!-- carousel start here -->
-    <div class="container">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/images/Shop/shop-head-img.png" class="d-block w-100" alt="...">
-                </div>
+        <div class="col-md-9 col-lg-6">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="/html/about-us.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line"></span>Packages</a></li>
+                <li><a href="/html/T-Shop-MainPage.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Shop</a></li>
+                <li><a href="/html/M-Blog-MainPage.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Blog</a></li>
+                <li><a href="/html/contact-us.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Contact US</a></li>
+                <li><a href="/html/about-us.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>About</a></li>
+              </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Others</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://www.privacypolicygenerator.info/live.php?token=dMFLjGaYsEvNVQ8XTlVOyb83dg8Z9tuS"
+                    class="py-1 d-block D-FooterLinks"><span class="ri-checkbox-circle-line mr-2"></span>Privacy
+                    Policy</a></li>
+                <li><a href="/html/terms.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Terms and Conditions</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- carousel end here -->
-
-    <!-- Card section -->
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-restart-line"></span> Easy
-                    Return</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-shield-line"></span> Safe
-                    Payments</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span
-                        class="ri-money-dollar-circle-line"></span> Best Price</p>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <p class="D-SecCardSignleItem py-2 px-3 text-center mx-3"><span class="ri-checkbox-circle-line"></span>
-                    100% Authentic Products</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- main heading text -->
-    <div class="container">
-        <h1 class="text-center my-4 D-ShopMainText">
-            Shop Products
-        </h1>
-        <!-- all products are here -->
-
-        <div class="row g-3">
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="/images/Shop/item-img2.png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Peacock Wall Decor</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (5).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Carved Wood Mask</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (6).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Silver Stone Necklace</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (4).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Gold Pearl Necklace Set</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (5).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Women's Necklace</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (7).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Leather Humpty</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (7).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Leather Chair</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (5).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">
-                        Painted Stoneware Vase</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (13).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Fish Selling Painting</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (12).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Leader Speaks Painting</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (12).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Sturdy Stilts Painting</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (5).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Vegetable Basket</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (9).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Hopper Maker</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-            <!-- item start -->
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="D-ShopItemCard p-3">
-                    <img src="../images/T-shop/shop-item (10).png" alt="Product"
-                        class="mx-auto D-ShopItemImage product-img">
-                    <h1 class="D-ShopItemTitle mt-3 product-title">Sea Salt Container</h1>
-                    <p class="D-ShopItemPrice product-price">$469.34</p>
-                    <p class="D-ShopRatings"><span class="ri-star-line"></span> 4.7</p>
-                    <button class="btn btn-primary D-Button-Primary text-center D-ShopAddToCartButton add-cart"
-                        type="submit">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-            <!-- item end -->
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
+  </footer>
   
 
 

@@ -275,7 +275,7 @@
 }
 
 .col-md-6{
-  background-color: ;
+  background-color: var(--colorbackground);
 }
 
 .T-LoginText1{
@@ -502,10 +502,7 @@
   
 }
 
-.form-check-input{
-  
 
-}
 
 .form-check-label j-SearchBarLabel{
   color: var(--colorGreenMain);
@@ -614,10 +611,10 @@
   border-radius: 15px;
   
 }
-.
 
-.order3{
-  padding-top:120px ;
+
+order3{
+  padding-top: 120px;
   color: #076C54;
 }
 
@@ -630,10 +627,3 @@
 
     
 
-
-  
-
-
-
-
-    
