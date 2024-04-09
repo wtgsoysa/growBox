@@ -289,6 +289,11 @@ img {
     height: 100%;
 }
 
+.A-cart-btn {
+    text-align: center;
+    justify-content: center;
+}
+
 .cart {
     position: fixed;
     top: 0;
